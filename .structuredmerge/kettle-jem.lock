@@ -670,7 +670,7 @@ files:
   CHANGELOG.md:
     recipe: template_source_application_CHANGELOG_md
     action: write
-    dest_sha256: 2338ca0f3a211e68cce81d2ae8b0e99dde78f1a7b08c9b6ea15d18473725dc01
+    dest_sha256: f52647800664d98d2e5a2f0abd0460951c06382412e31d1e3f2e2f6f566c1932
     input_fingerprint: 65b5ede97ef1a0bc1cb7049a23fdca4107947e43fa5ebd24bfcd37998c17e767
     template_sources:
     - CHANGELOG.md.example
@@ -1138,7 +1138,7 @@ files:
   spec/spec_helper.rb:
     recipe: template_source_application_spec_spec_helper_rb
     action: write
-    dest_sha256: dd5ec620ef8bdbc138255f5fa4e3e20562c131a830adbc9db6b483ef3f0f28af
+    dest_sha256: 652b76c7e03b29cc4eecf9ca5c7f679ac7893189f55df0bc00a5415cb3d7ee0f
     input_fingerprint: cc416ca4db4c067de608fdbea2144734956ce9df38582076828ed733bde815f5
     template_sources:
     - spec/spec_helper.rb.example
