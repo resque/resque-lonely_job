@@ -80,13 +80,6 @@
 # ENV override: KJ_PROJECT_EMOJI
 project_emoji: ""
 
-files:
-  spec:
-    spec_helper.rb:
-      merge:
-        preference: destination
-        add_template_only_nodes: false
-
 # Engines this project supports.
 # List the Ruby engines that your gem targets. kettle-jem uses this to decide
 # which CI workflows, README compatibility rows, and badge references to
@@ -494,3 +487,8 @@ files:
         strategy: accept_template
       templating_local.gemfile:
         strategy: accept_template
+  spec:
+    spec_helper.rb:
+      strategy: merge
+      preference: destination
+      add_template_only_nodes: false
