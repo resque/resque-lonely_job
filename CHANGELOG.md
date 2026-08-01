@@ -111,6 +111,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Remove templating-generated duplicate version loading and unused alternate entrypoint files.
 
+- Restore the documented resque/plugins/lonely_job compatibility require path.
+
 ### Security
 
 [Unreleased]: https://gitlab.com/resque/resque-lonely_job/-/compare/HEAD
