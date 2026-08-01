@@ -705,7 +705,7 @@ files:
   Gemfile:
     recipe: template_source_application_Gemfile
     action: write
-    dest_sha256: b34f703efa9f1d5578e6b6f613e736156ece07d405a6b88f7928e4b628d21380
+    dest_sha256: 74e8787f855406d9acdca48fec5d504ca671339fd63e6aa552d2dad15e67c67c
     input_fingerprint: 93fecd7a344aaa1a44762cea29817359bb44f1a2c1d49c7416faab8e3d531b06
     template_sources:
     - Gemfile.example
@@ -753,7 +753,7 @@ files:
   Rakefile:
     recipe: template_source_application_Rakefile
     action: write
-    dest_sha256: 56319c0aa74c18730cb3d0dfc5c3bdd759e3fe25ca3ad6353ed474c1cefe71aa
+    dest_sha256: 5ce08914fb5353e2882139723a7c7a0060126597e2dcabe74d5eaa852361f14f
     input_fingerprint: 2296539957dde810604ae06715feb0c5719bab24d9cab7e108c99d266804a43d
     template_sources:
     - Rakefile.example
@@ -1117,7 +1117,7 @@ files:
   resque-lonely_job.gemspec:
     recipe: template_source_application_resque_lonely_job_gemspec
     action: write
-    dest_sha256: e4b41cde5cd4e03911132caba8653ce9f4ea91a2c1e01407da3d53406996c652
+    dest_sha256: f266c4662d73aa891804580394af4655dcbfdc388ebec50c4b8756ad4e7a9ea2
     input_fingerprint: 33cdcfe0f2bfe37720673f00e0297bb3bfb4ac9806d5fb139ccc028ff7062e3d
     template_sources:
     - gem.gemspec.example
@@ -1138,7 +1138,7 @@ files:
   spec/spec_helper.rb:
     recipe: template_source_application_spec_spec_helper_rb
     action: write
-    dest_sha256: 30ea270dec34ee8fd3d6194c7550d4cd38d1b910c3cb6017a5a7efd940d89b42
+    dest_sha256: 65111eea7def87a18478622dc082568a41496d05ffa9ba1bc06199fe2cf7916a
     input_fingerprint: 8ea8841700847a291c317e992038ae8eba49a28d4da35515fc9e8c4837667eb1
     template_sources:
     - spec/spec_helper.rb.example
