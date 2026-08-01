@@ -28,7 +28,11 @@ describe Resque::Plugins::LonelyJob do
   end
 
   describe ".requeue_interval" do
-    it "defaults to 5" do
+    before do
+      SerialJob.remove_instance_variable(:@requeue_interval) if SerialJob.instance_variable_defined?(:@requeue_interval)
+    end
+
+    it "defaults to 1" do
       expect(SerialJob.requeue_interval).to eql(1)
     end
 
