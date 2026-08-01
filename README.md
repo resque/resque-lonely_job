@@ -21,6 +21,10 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+`resque-lonely_job` is the original Resque worker-time serialization plugin. Extend a job with `Resque::Plugins::LonelyJob` to take a Redis mutex before `perform`. A job that cannot acquire the lock is re-enqueued instead of running concurrently.
+
+By default the mutex is per queue, so at most one job from a queue runs at a time. Override `redis_key(*args)` to serialize a selected resource or partition instead.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -118,6 +122,22 @@ gem install resque-lonely_job
 ```
 
 ## ⚙️ Configuration
+
+LonelyJob has no global configuration object. Configure behavior on the job class:
+
+```ruby
+class RebuildAccount
+  extend Resque::Plugins::LonelyJob
+  @queue = :maintenance
+  @requeue_interval = 1
+
+  def self.redis_key(account_id, *)
+    "lonely_job:rebuild_account:#{account_id}"
+  end
+end
+```
+
+`@requeue_interval` defaults to one second and controls how long a worker waits before re-enqueuing a contested job. Lock expiry defaults to five days, so custom keys and job duration must be designed together. All workers must use the same Redis namespace.
 
 ## 🔧 Basic Usage
 
