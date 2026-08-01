@@ -113,6 +113,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Restore the documented resque/plugins/lonely_job compatibility require path.
 
+- Restore automatic VersionGem entrypoint management for the supported Ruby runtime.
+
 ### Security
 
 [Unreleased]: https://gitlab.com/resque/resque-lonely_job/-/compare/HEAD

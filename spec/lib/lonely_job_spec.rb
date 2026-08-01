@@ -67,6 +67,14 @@ describe Resque::Plugins::LonelyJob do
       end
     end
 
+    it "does not lock when another worker wins the expired-lock race" do
+      allow(Resque.redis).to receive(:setnx).and_return(false)
+      allow(Resque.redis).to receive(:get).and_return(0)
+      allow(Resque.redis).to receive(:getset).and_return(Time.now.to_i + 60)
+
+      expect(SerialJob.can_lock_queue?(:serial_work)).to eql(false)
+    end
+
     it "solves race condition with getset" do
       expect(SerialJob.can_lock_queue?(:serial_work)).to eql(true)
 
@@ -84,6 +92,16 @@ describe Resque::Plugins::LonelyJob do
         }
         expect(locks.count(true)).to eql(1)
       end
+    end
+  end
+
+  describe ".unlock_queue" do
+    it "removes the queue lock" do
+      expect(SerialJob.can_lock_queue?(:serial_work)).to eql(true)
+
+      SerialJob.unlock_queue(:serial_work)
+
+      expect(Resque.redis.get(SerialJob.redis_key(:serial_work))).to be_nil
     end
   end
 

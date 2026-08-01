@@ -4,7 +4,7 @@ require "open3"
 require "rbconfig"
 require "resque/plugins/lonely_job"
 
-RSpec.describe "resque/plugins/lonely_job" do
+RSpec.describe Resque::Plugins::LonelyJob do
   it "loads the current LonelyJob implementation in a clean Ruby process" do
     program = <<~RUBY
       require "resque/plugins/lonely_job"
