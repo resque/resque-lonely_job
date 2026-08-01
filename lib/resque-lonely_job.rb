@@ -1,4 +1,7 @@
-require 'resque-lonely_job/version'
+require "version_gem"
+require_relative "resque-lonely_job/version"
+
+require "resque-lonely_job/version"
 
 module Resque
   module Plugins
@@ -10,7 +13,7 @@ module Resque
       end
 
       def requeue_interval
-        self.instance_variable_get(:@requeue_interval) || 1
+        instance_variable_get(:@requeue_interval) || 1
       end
 
       # Overwrite this method to uniquely identify which mutex should be used
@@ -25,10 +28,10 @@ module Resque
         timeout = lock_timeout
 
         # Per http://redis.io/commands/setnx
-        return true  if Resque.redis.setnx(key, timeout)
+        return true if Resque.redis.setnx(key, timeout)
         return false if Resque.redis.get(key).to_i > now
-        return true  if Resque.redis.getset(key, timeout).to_i <= now
-        return false
+        return true if Resque.redis.getset(key, timeout).to_i <= now
+        false
       end
 
       def unlock_queue(*args)
@@ -61,4 +64,8 @@ module Resque
       end
     end
   end
+end
+
+Resque::Plugins::LonelyJob::Version.class_eval do
+  extend VersionGem::Basic
 end

@@ -1,0 +1,10 @@
+module Resque
+  module Plugins
+    module LonelyJob
+      module Version
+        VERSION: String
+      end
+      VERSION: String
+    end
+  end
+end
