@@ -1,8 +1,6 @@
 require "version_gem"
 require_relative "resque-lonely_job/version"
 
-require "resque-lonely_job/version"
-
 module Resque
   module Plugins
     module LonelyJob

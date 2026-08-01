@@ -109,6 +109,8 @@ Please file a bug if you notice a violation of semantic versioning.
   use GitHub's stable organization avatar endpoint instead of assuming a
   matching Galtzo-hosted asset exists.
 
+- Remove templating-generated duplicate version loading and unused alternate entrypoint files.
+
 ### Security
 
 [Unreleased]: https://gitlab.com/resque/resque-lonely_job/-/compare/HEAD

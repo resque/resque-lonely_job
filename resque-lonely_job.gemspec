@@ -11,9 +11,9 @@ gem_version =
     # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!
     # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
     # See: https://github.com/panorama-ed/memo_wise/pull/397
-    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/resque/lonely_job/version.rb", mod) }::Resque::Plugins::LonelyJob::Version::VERSION
+    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/resque-lonely_job/version.rb", mod) }::Resque::Plugins::LonelyJob::Version::VERSION
   else
-    require_relative "lib/resque/lonely_job/version"
+    require_relative "lib/resque-lonely_job/version"
     Resque::Plugins::LonelyJob::Version::VERSION
   end
 
