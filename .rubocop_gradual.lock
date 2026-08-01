@@ -33,8 +33,5 @@
   ],
   "spec/resque-lonely_job/version_spec.rb:2407814440": [
     [4, 1, 50, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job/version*_spec.rb`.", 1045099790]
-  ],
-  "spec/resque/lonely_job/version_spec.rb:236643432": [
-    [4, 1, 50, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job/version*_spec.rb`.", 1045099790]
   ]
 }
