@@ -2,11 +2,11 @@
   "Rakefile:2832110540": [
     [167, 1, 16, "Rake/Desc: Describe the task with `desc` method.", 850263259]
   ],
-  "resque-lonely_job.gemspec:4250795153": [
+  "resque-lonely_job.gemspec:3410807613": [
     [181, 3, 44, "Gemspec/DependencyVersion: Dependency version specification is required.", 1772526191],
     [183, 3, 41, "Gemspec/DependencyVersion: Dependency version specification is required.", 3258055162]
   ],
-  "spec/lib/lonely_job_spec.rb:2693934952": [
+  "spec/lib/lonely_job_spec.rb:3780981074": [
     [25, 1, 35, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job*_spec.rb`.", 1516950445],
     [36, 45, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
     [41, 45, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
@@ -17,19 +17,24 @@
     [58, 60, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
     [63, 58, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
     [66, 60, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
-    [71, 58, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
-    [75, 11, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
-    [85, 38, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
-    [100, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
-    [112, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
-    [115, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
-    [131, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
-    [136, 33, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
-    [148, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
-    [160, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
-    [163, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
-    [179, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
-    [184, 33, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885]
+    [71, 7, 56, "RSpec/ReceiveMessages: Use `receive_messages` instead of multiple stubs on lines [72, 73].", 1676998914],
+    [72, 7, 50, "RSpec/ReceiveMessages: Use `receive_messages` instead of multiple stubs on lines [71, 73].", 1085869485],
+    [73, 7, 70, "RSpec/ReceiveMessages: Use `receive_messages` instead of multiple stubs on lines [71, 72].", 3459001340],
+    [75, 58, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
+    [79, 58, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
+    [83, 11, 10, "ThreadSafety/NewThread: Avoid starting new threads.", 3411682361],
+    [93, 38, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
+    [100, 58, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
+    [118, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
+    [130, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
+    [133, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
+    [149, 9, 17, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 507636028],
+    [154, 33, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885],
+    [166, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
+    [178, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
+    [181, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
+    [197, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
+    [202, 33, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885]
   ],
   "spec/resque-lonely_job/version_spec.rb:2407814440": [
     [4, 1, 50, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job/version*_spec.rb`.", 1045099790]
