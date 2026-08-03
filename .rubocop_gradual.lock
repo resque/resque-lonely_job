@@ -36,7 +36,7 @@
     [197, 9, 35, "RSpec/StubbedMock: Prefer `allow` over `expect` when configuring a response.", 389807891],
     [202, 33, 3, "RSpec/BeEql: Prefer `be` over `eql`.", 193405885]
   ],
-  "spec/resque-lonely_job/version_spec.rb:2407814440": [
-    [4, 1, 50, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job/version*_spec.rb`.", 1045099790]
+  "spec/resque-lonely_job/version_spec.rb:2567061026": [
+    [5, 1, 50, "RSpec/SpecFilePathFormat: Spec path should end with `resque/plugins/lonely_job/version*_spec.rb`.", 1045099790]
   ]
 }
