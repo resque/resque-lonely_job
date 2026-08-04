@@ -2,6 +2,9 @@
   "Rakefile:2832110540": [
     [167, 1, 16, "Rake/Desc: Describe the task with `desc` method.", 850263259]
   ],
+  "gemfiles/modular/templating.gemfile:3018447732": [
+    [14, 3, 47, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 3843603197]
+  ],
   "resque-lonely_job.gemspec:3180895197": [
     [181, 3, 44, "Gemspec/DependencyVersion: Dependency version specification is required.", 1772526191],
     [183, 3, 41, "Gemspec/DependencyVersion: Dependency version specification is required.", 3258055162]
