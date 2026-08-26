@@ -2,7 +2,7 @@
   "Rakefile:2832110540": [
     [167, 1, 16, "Rake/Desc: Describe the task with `desc` method.", 850263259]
   ],
-  "resque-lonely_job.gemspec:1382281936": [
+  "resque-lonely_job.gemspec:94994311": [
     [181, 3, 44, "Gemspec/DependencyVersion: Dependency version specification is required.", 1772526191],
     [183, 3, 41, "Gemspec/DependencyVersion: Dependency version specification is required.", 3258055162]
   ],
