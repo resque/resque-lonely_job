@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.1.4] - 2026-08-26
+
+- TAG: [v1.1.4][1.1.4t]
+- COVERAGE: 100.00% -- 41/41 lines in 3 files
+- BRANCH COVERAGE: 100.00% -- 8/8 branches in 3 files
+- 40.00% documented
+
+### Added
+
 - kettle-jem-template-20260720-005 - README Support & Community links now
   include RubyForum.
 - kettle-jem-template-20260726-001 - Projects now include YARD lint
@@ -56,10 +75,6 @@ Please file a bug if you notice a violation of semantic versioning.
   - documentation (2)
   - other (5)
   - workflows (30)
-
-### Deprecated
-
-### Removed
 
 ### Fixed
 
@@ -115,6 +130,6 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Generated gemspec author metadata now includes all non-machine copyright holders.
 
-### Security
-
-[Unreleased]: https://gitlab.com/resque/resque-lonely_job/-/compare/HEAD
+[Unreleased]: https://github.com/resque/resque-lonely_job/compare/v1.1.4...HEAD
+[1.1.4]: https://github.com/resque/resque-lonely_job/compare/6f784fa7dd7863db4d6169ae7f9519880c1ccb41...v1.1.4
+[1.1.4t]: https://github.com/resque/resque-lonely_job/releases/tag/v1.1.4
