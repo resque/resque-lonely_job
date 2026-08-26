@@ -20,7 +20,7 @@ gem_version =
 Gem::Specification.new do |spec|
   spec.name = "resque-lonely_job"
   spec.version = gem_version
-  spec.authors = ["Jonathan R. Wallace"]
+  spec.authors = ["Jonathan R. Wallace", "Tatsuhiko Miyagawa", "Lance Woodson", "Peter H. Boling"]
   spec.email = ["floss@galtzo.com"]
 
   spec.summary = "💎 A resque plugin that ensures that only one job for a given queue will be running on any worker at a given time."
@@ -79,7 +79,7 @@ Gem::Specification.new do |spec|
   gemspec_root = __dir__
   relative_package_path = lambda do |path|
     prefix = "#{gemspec_root}/"
-    (path[0, prefix.length] == prefix) ? path[prefix.length..-1] : path
+    path[0, prefix.length] == prefix ? path[prefix.length..-1] : path
   end
   enumerate_package_glob = lambda do |glob|
     files = []
