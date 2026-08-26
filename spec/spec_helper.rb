@@ -23,7 +23,6 @@ end
 require "kettle/test/rspec"
 # `kettle/test/rspec` installs harness helpers documented in spec/README.md.
 require "rubygems"
-require "bundler/setup"
 require "rspec"
 
 require "mock_redis"
