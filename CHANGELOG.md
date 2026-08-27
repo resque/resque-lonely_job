@@ -30,7 +30,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Security
 
-## [1.1.4] - 2026-08-26
+## [1.1.4] - 2026-08-27
 
 - TAG: [v1.1.4][1.1.4t]
 - COVERAGE: 100.00% -- 41/41 lines in 3 files
